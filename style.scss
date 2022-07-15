@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+//Colors
+$white: #ffffff;
+$cream: #f2f2f2;
+$orange: #ffa500;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Francois One', sans-serif;
+    color: $white;
+    background-image: url(./bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    .app{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: rgba(0,0,0,.7);
+        height: 100vh;
+        .header{
+            padding: 50px 20px 30px 20px;
+            h1{
+                font-size: 50px;
+                color: $orange;
+                text-shadow: 1px 3px rgba(0,0,0,.9);
+            }
+            input{
+                width: 100%;
+                padding: 10px;
+                background-color: transparent;
+                border: none;
+                outline: 0;
+                border-bottom: 2px solid $orange;
+                text-align: center;
+                font-size: 20px;
+                color: $cream;
+                text-transform: capitalize;
+            }
+        }
+        .content{
+            .city{
+                font-size: 35px;
+                font-weight: 500;
+                margin-bottom: 10px;
+                text-shadow: 1px 3px rgba(0,0,0,.8);
+            }
+            .temp{
+                font-size: 100px;
+                font-weight: 700;
+                margin-bottom: 15px;
+                text-shadow: 1px 5px rgba(0,0,0,.1);
+            }
+            .desc{
+                font-size: 25px;
+                font-style: italic;
+                text-shadow: 1px 3px rgba(0,0,0,.8);
+                margin-bottom: 10px;
+            }
+            .minmax{
+                font-size: 24px;
+                text-shadow: 1px 3px rgba(0,0,0,.8);
+            }
+        }
+        p{
+            margin-top: 10rem;
+        }
+    }
+}
