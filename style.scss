@@ -14,7 +14,8 @@ $orange: #ffa500;
 body{
     font-family: 'Francois One', sans-serif;
     color: $white;
-    background-image: url(./bg.webp);
+    background-image: url(./sun.gif);
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -25,7 +26,7 @@ body{
         align-items: center;
         justify-content: center;
         text-align: center;
-        background: rgba(0,0,0,.7);
+        background: rgba(0,0,0,.3);
         height: 100vh;
         .header{
             padding: 50px 20px 30px 20px;
@@ -72,7 +73,7 @@ body{
             }
         }
         p{
-            margin-top: 10rem;
+            margin-top: 7rem;
         }
     }
 }

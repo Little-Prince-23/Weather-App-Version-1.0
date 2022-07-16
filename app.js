@@ -30,6 +30,15 @@ const displayResult = (result) => {
 
     let desc = document.querySelector(".desc");
     desc.textContent = (result.weather[0].description);
+    if(desc.textContent.includes("yağış")){
+        document.body.style.backgroundImage = "url('./rain.gif')";
+    }else if(desc.textContent.includes("bulud")){
+        document.body.style.backgroundImage = "url('./cloud.gif')";
+    }else if(desc.textContent.includes("aydın")){
+        document.body.style.backgroundImage = "url('./sun.gif')";
+    }
+
+
 
     let minmax = document.querySelector(".minmax");
     minmax.textContent = `${Math.round(result.main.temp_min)} °C / ${Math.round(result.main.temp_max)} °C`
